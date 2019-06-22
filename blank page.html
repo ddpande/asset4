@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ASSET | Dashboard</title>
+  <link rel="shortcut icon" href="dist/img/icon.png" type="image/x-icon">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <header class="main-header" style="box-shadow: 1px 1px 5px grey;">
+      <!-- Logo -->
+      <a href="#" class="logo" style="background-color: #fff;">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><img src="dist/img/icon.png" alt="mini-logo" style="max-width: 25px;"></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="dist/img/asset.png" alt="logo" style="max-width:230px;margin-top:-25px;margin-left:-15px;"></span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top" style="background-color: #fff;">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="color: #29a9c0;">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="dist/img/1.png" class="user-image" alt="User Image">
+                <span class="hidden-xs">Anton</span>
+              </a>
+              <ul class="dropdown-menu" style="border:1px solid #aaa;width: 150px;">
+                <ul class="sidebar-menu">
+                  <li>
+                    <a href="#" style="color:black;">
+                      <i class="fa fa-gears"></i>
+                      <span>Profile Setting</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="login.html" style="color:black;">
+                      <i class="glyphicon glyphicon-log-out"></i>
+                      <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar" style="background-color:#fff;">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel" style="background-color: #2ba8be;">
+          <div class="pull-left image">
+            <img src="dist/img/1.png" class="img-circle" alt="User Image" style="border:2px solid #fff;">
+          </div>
+          <div class="pull-left info">
+            <p>Anton</p>
+            <a href="#">Anton@example.com</a>
+          </div>
+        </div>
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header" style="background-color:#fff;"><b style="color: black;font-size: 12px;">BERANDA</b></li>
+          <li class="active">
+            <a href="#">
+              <i class="fa fa-home"></i>
+              <span>Dasboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-newspaper-o"></i>
+              <span>Berita</span>
+            </a>
+          </li>
+          <li class="header" style="background-color:#fff;"><b style="color: black;font-size: 12px;">PRODUK</b></li>
+          <li>
+            <a href="dposito.html">
+              <i class="fa fa-usd"></i>
+              <span>Deposito</span>
+            </a>
+          </li>
+          <li>
+            <a href="obligasi.html">
+              <img src="dist/img/bond.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Obligasi</span>
+            </a>
+          </li>
+          <li>
+            <a href="reksadana.html">
+              <img src="dist/img/mutualfunds.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Reksadana</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <img src="dist/img/stock.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Saham</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="sekuritas.html" style="color:black;">Sekuritas</a></li>
+              <li><a href="sinyal-saham.html" style="color:black;">Sinyal Saham</a></li>
+              
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <img src="dist/img/forex.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Forex</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="broker.html" style="color:black;">Broker</a></li>
+              <li><a href="#" style="color:black;">Sinyal Forex</a></li>
+              <li><a href="#" style="color:black;">Robot Forex</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <img src="dist/img/gold.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Emas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="dist/img/insurance.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Asuransi</span>
+            </a>
+          </li>
+          <li>
+            <a href="cpf.html">
+              <img src="dist/img/cfp.png" width="20px" style="padding-right:2px; filter: brightness(0%);"></img>
+              <span>Certified Financial Planner</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i>
+              <span>Acara</span>
+            </a>
+          </li>
+          <li style="border-bottom:1px solid #aaa;">
+            <a href="#">
+              <i class="fa fa-graduation-cap"></i>
+              <span>Pembelajaran</span>
+            </a>
+          </li>
+          <li class="header" style="background-color:#fff;"><b style="color: black;font-size: 12px;">PENGATURAN</b></li>
+          <li>
+            <a href="#">
+              <i class="fa fa-wechat"></i>
+              <span>Chat CS</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-file-text-o"></i>
+              <span>Laporan Investasi</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-info-circle"></i>
+              <span>Tentang</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs"></div>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<script src="bower_components/raphael/raphael.min.js"></script>
+<script src="bower_components/morris.js/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
