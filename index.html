@@ -3,6 +3,7 @@
 
 <head>
 
+	<link rel="shortcut icon" href="dist/img/icon.png" type="image/x-icon">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
@@ -42,10 +43,17 @@
 .button1 {padding: 10px 24px;}
 
 .bg-primary {
-    background-color: #2ba8be!important;
+
+		background-image: linear-gradient(to right, #2ba8be, #93eeff);
 }
 .img-head{
-	width:70%;
+	width:60%;
+}
+.img-pad{
+	padding: 25px;
+}
+.text-pad{
+	padding-left:50px;
 }
 
 @media (min-width: 0px) and (max-width: 640px) {
@@ -55,6 +63,16 @@
 	.img-head{
 		 width:100%;
 	}
+	.img-pad{
+		padding: 20%;
+	}
+	.text-pad{
+		padding-left:15px;
+	}
+}
+.row{
+		margin-right: 0px;
+		margin-left: 0px;
 }
 </style>
 
@@ -88,11 +106,11 @@
 
 	<header class="bg-primary text-white" style="padding-top: 100px; padding-bottom: 40px;">
 		<div class="container">
-			<div class="row" style="margin-right: 0px; margin-left: 0px">
-				<div class="col-lg-7">
+			<div class="row">
+				<div class="col-lg-6">
 					<div class="home-demo" style="padding-bottom: 0px; padding-top: 0px">
 						<div class="row">
-							<div class="large-12 columns">
+							<div class="large-12 columns" >
 								<div class="owl-carousel owl-theme">
 									<div class="item center img-head" id="item">
 										<img src="dist/img/hand1.png">
@@ -115,9 +133,9 @@
 					</div>
 				</div>
 				<div class="col-lg-5">
-					<div class="container text-left" style="padding-top: 15px">
+					<div class="container text-left" style="padding-left:0px">
 						<h1>Welcome to Scrolling Nav</h1>
-						<p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+						<p class="lead text-white">A landing page template freshly redesigned for Bootstrap 4</p>
 							<a href="login.html"><button type="button" class="btn btn-light btn-lg" style="padding:4px 15px">Masuk</button></a>
 							<a href="register.html"><button type="button" class="btn btn-light btn-lg" style="padding:4px 15px">Daftar</button></a>
 					</div>
@@ -126,16 +144,17 @@
 		</div>
 	</header>
 
-	<section id="produk">
+	<section id="produk" style="padding-bottom:150px">
 		<div class="container">
-			<div class="col-xl-12">
 			<div class="row">
+
 				<div class="col-lg-4">
-					<img src="dist/img/produk.png" style="padding:20%">
+					<img src="dist/img/produk.png" class="img-pad">
 				</div>
-				<div class="col-lg-8">
+
+				<div class="col-lg-8 mx-auto text-pad">
 					<h2>Produk</h2>
-					<p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+					<p class="lead" align="justify">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
 					<ul>
 						<li>Clickable nav links that smooth scroll to page sections</li>
 						<li>Responsive behavior when clicking nav links perfect for a one page website</li>
@@ -144,37 +163,41 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+
+		<div style="padding-bottom:100px"></div>
 		</div>
 	</section>
 
-	<section id="berita" class="bg-light">
+	<section id="berita" class="bg-light" >
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 mx-auto">
-					<img src="dist/img/news.png" style="padding:20%">
+				<div class="col-lg-4">
+					<img src="dist/img/news.png" class="img-pad">
 				</div>
-				<div class="col-lg-8 mx-auto">
+				<div class="col-lg-8 mx-auto text-pad" >
 					<h2>Berita<h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+					<p class="lead" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
 				</div>
 			</div>
+			<div style="padding-bottom:100px"></div>
 		</div>
 	</section>
 
-	<section id="laporan" style="padding:">
+	<section id="laporan">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 mx-auto">
-					<img src="dist/img/laporan.png" style="padding:20%">
+			<div class="row" style="margin-left:0px; margin-right:0px;">
+				<div class="col-lg-4">
+					<img src="dist/img/laporan.png" class="img-pad">
 				</div>
-				<div class="col-lg-8 mx-auto">
+				<div class="col-lg-8 mx-auto text-pad" >
 					<h2>Laporan</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+					<p class="lead" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
 				</div>
 			</div>
+			<div style="padding-bottom:100px"></div>
 		</div>
 	</section>
+
 
 	<!-- Footer -->
 	<footer class="py-5 bg-dark">
